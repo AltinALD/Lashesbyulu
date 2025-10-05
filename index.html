@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lash by Ulu – Luxury eyelash extensions and beauty appointments. Book your lash session today!" />
+  <title>Lash by Ulu</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="hero">
+    <img src="by-ulu-logo.png" alt="Lash by Ulu Logo" class="logo" />
+    <h1>Lash by Ulu</h1>
+    <p>Luxury Eyelash Extensions & Beauty Care</p>
+    <a href="#booking" class="btn">Book an Appointment</a>
+  </header>
+
+  <!-- About -->
+  <section class="about">
+    <h2>About</h2>
+    <p>
+      Welcome to <strong>Lash by Ulu</strong> — where beauty meets perfection.  
+      Specializing in classic, hybrid, and volume eyelash extensions designed to bring out your natural elegance.
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>Services & Pricing</h2>
+    <div class="service-list">
+      <div class="service">
+        <h3>Classic Set</h3>
+        <p>Natural and elegant – perfect for everyday wear.</p>
+        <span>€40</span>
+      </div>
+      <div class="service">
+        <h3>Hybrid Set</h3>
+        <p>Soft mix between natural and volume for a fuller look.</p>
+        <span>€50</span>
+      </div>
+      <div class="service">
+        <h3>Volume Set</h3>
+        <p>Bold and glamorous lashes for stunning eyes.</p>
+        <span>€60</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="booking">
+    <h2>Book Your Appointment</h2>
+    <form id="bookingForm" action="send_email.php" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="email" name="email" placeholder="Email (optional)" />
+      <input type="date" name="date" required />
+      <textarea name="message" placeholder="Additional notes..." rows="4"></textarea>
+      <button type="submit" class="btn">Send Booking Request</button>
+    </form>
+    <div id="formMessage"></div>
+  </section>
+
+  <!-- Contact -->
+  <footer class="footer">
+    <p>📞 <a href="tel:+491633488431">+49 163 348 8431</a></p>
+    <p>📧 <a href="mailto:lashbyulu@gmail.com">lashbyulu@gmail.com</a></p>
+    <div class="socials">
+      <a href="https://instagram.com/lashby_ulu" target="_blank">
+        <img src="instagram-icon.svg" alt="Instagram" />
+      </a>
+    </div>
+    <p class="copy">© 2025 Lash by Ulu | Designed by ALDesigns</p>
+  </footer>
+</body>
+</html>
